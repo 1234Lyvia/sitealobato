@@ -49,3 +49,33 @@
        box-shadow: #D895DA;
        height: 200px;
    }
+
+  
+
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 10px;
+   padding: 10px;
+}
+
+.gallery-item {
+   overflow: hidden;
+   border-radius: 8px;
+}
+
+.gallery-item img {
+   width: 100%;
+   height: auto;
+   display: block;
+   transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+   transform: scale(1.05);
+}
+
+
+
+
+
